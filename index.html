@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration System </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div id="main">
+        <!-- main div start -->
+
+        <div id="header">
+            <h1 id="logo-text" style="font-size:30px; font-family: serif; ">
+                <a href="index.php" title="Registration System">Registration System</a>
+            </h1>
+        </div>
+
+
+        <ul class="nav flex-column bg-info text-white" style="  transition: 0.5s;
+            height: 100%; width: 15%; position: fixed; left: 40px; margin-left: .5s; padding: 20px;margin: auto;">
+            <li class="nav-item ">
+                <a class="nav-link text-danger" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-danger" href="#">about</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-danger" href="#">Register</a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="container">
+
+        <table border="0" cellspacing="1" align="center" cellpadding="0" width="50%" bgcolor="#A6CAF0"
+            style="margin-top:100px;">
+            <tr>
+                <td height="48" align="center" bgcolor="#D3E2EA">
+                    <h3>Registration Form</h3>
+                </td>
+            </tr>
+        </table>
+        <form action="/action_page.php">
+            <table border="0" cellspacing="1" align="center" cellpadding="0" width="50%" bgcolor="#FFFFFF">
+                <tr>
+                    <td height="30" align="center" bgcolor="#FFFFFF"></td>
+                </tr>
+            </table>
+
+            <table border="0" cellspacing="1" align="center" cellpadding="0" width="50%" bgcolor="#A6CAF0"
+                style="margin-bottom:105px">
+                <tr>
+                    <td height="48" align="center" bgcolor="#D3E2EA">
+
+                        <table width="100%" height="200" border="0" align="left"
+                            style="text-align:left; margin:0px; padding: 20px">
+                            <tr>
+                                <td colspan="3">
+                                    <p><b>Please fill in the form to register:<br /></b>[<i> feilds marked
+                                            with <b style="color:#2B77CF">*</b> are required </i>]</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <label for="fname">First Name:</label>
+                                        <input class="form-control" name="fname" type="text" id="fname"
+                                            placeholder="Enter first name">
+                                <td><b style="color:#2B77CF">*</b></td>
+    </div>
+    </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input class="form-control" name="lname" type="text" id="lname" placeholder="Enter Last name">
+        <td><b style="color:#2B77CF">*</b></td>
+        </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        <td><b style="color:#2B77CF">*</b></td>
+
+        </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="form-group">
+                <label for="Password">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+        <td><b style="color:#2B77CF">*</b></td>
+
+        </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="form-group">
+                <label for="Password">Confirm PWD:</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter Confirm PWD"
+                    name="password">
+        <td><b style="color:#2B77CF">*</b></td>
+
+        </div>
+        </td>
+    </tr>
+    <tr>
+
+        <td>
+            <div class="form-group">
+                <label for="Gender:"> Gender:</label>
+        </td>
+        <td>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" checked>
+                <label for="female">Female</label>
+        <td><b style="color:#2B77CF">*</b></td>
+        </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Nationality:</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Please select</option>
+                    <option>Palestinian</option>
+                    <option>Rassia</option>
+                    <option>Mercedes</option>
+                    <option>Audi</option>
+                </select>
+            </div>
+
+        </td>
+    </tr>
+    <td>
+            <div class="form-group">
+                <label for="Address">Address:</label>
+                <input type="text" class="form-control" id="text" placeholder="Enter Address" name="Address">
+        <td><b style="color:#2B77CF">*</b></td>
+
+        </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <div class="well"> 
+            <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" class="form-control" id="exampleInputDOB1" placeholder="Date of Birth">
+            <td><b style="color:#2B77CF">*</b></td>
+          </div>
+      </div>
+      </td>
+      </tr>
+      
+    <tr>
+        <td>
+            <div class="form-group">
+                <label for="  Hobbies">Hobbies:</label>
+            </div>
+        </td>
+        <td>
+            <div class="form-check">
+                <label class="form-check-label" for="check1">
+                    <input type="checkbox" class="form-check-input" id="check1" name="hobbies[]" id="hobbies[]"
+                        value="Travel abroad" />
+                    Travel abroad
+                </label><br />
+
+                <label class="form-check-label" for="check1">
+                    <input type="checkbox" class="form-check-input" id="check1" name="hobbies[]" id="hobbies[]"
+                        value="Read a good book" />
+                    Read a good book
+                </label><br />
+                <label class="form-check-label" for="check1">
+                    <input type="checkbox" class="form-check-input" id="check1" name="hobbies[]" id="hobbies[]"
+                        value="Dance" />
+                    Dance
+                </label><br />
+                <label class="form-check-label" for="check1">
+                    <input type="checkbox" class="form-check-input" id="check1" name="hobbies[]" id="hobbies[]"
+                        value="Play a favorite game" />
+                    Play a favorite game
+                </label><br />
+                <label class="form-check-label" for="check1">
+                    <input type="checkbox" class="form-check-input" id="check1" name="hobbies[]" id="hobbies[]"
+                        value="Watch movie" />
+                    Watch movie
+                </label><br />
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style=" text-align:center; padding-top:30px;">
+                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" class="btn btn-primary">Reset</button>
+
+        </td>
+    </tr>
+
+    </form>
+    </div>
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+
+</html>
